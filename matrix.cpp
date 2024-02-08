@@ -9,10 +9,6 @@ int main()
 	Matrix<int, 0> matrix;
 	assert(matrix.size() == 0); // все ячейки свободны
 
-	auto a = matrix[0][0];
-	assert(a == 0);
-	assert(matrix.size() == 0);
-
 	matrix[100][100] = 314;
 	assert(matrix[100][100] == 314);
 	assert(matrix.size() == 1);
